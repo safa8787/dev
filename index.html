@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>safa shop</title>
+  <link rel="stylesheet" href="css/style.CSS" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <img src="image/logo.png" width="100px" height="80px" alt="plus sign" />
+
+    <div class="search">
+      <input type="text" placeholder="Cherchez un produit, une marque ou une catégorie" />
+      <button id="rechercher">Rechercher</button>
+    </div>
+
+    <div class="par3">
+      <div class="connect">
+        <img src="image/connect.png" width="50px" height="50px" />
+        <select id="cars">
+          <option style="background-image: url(image/connect.jpg)" value="Se connecter">
+            Se connecter
+          </option>
+          <option value="votre compte">Votre compte</option>
+
+          <option value="vos cammandes">Vos cammandes</option>
+          <option value="votre liste d'envie">Votre liste d'envie</option>
+        </select>
+      </div>
+      <div class="aide">
+        <img src="image/aide.jpg" width="50px" height="50px" />
+        <select id="cars">
+          <option style="background-image: url(image/connect.jpg)" value="Aide">
+            Aide
+          </option>
+          <option value="saab">Saab</option>
+
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+      <div class="panier">
+        <img src="image/panier1.jpg" width="50px" height="50px" />
+
+        <button id="cars">
+
+          Panier
+        </button>
+
+
+      </div>
+      <div class="shopping-cart">
+        <h1>Votre Panier</h1>
+        
+    
+        <div class="cart-item">
+          <img src="/image/beauty1.webp" alt="gjh">
+          <h1>25 DT</h1>
+          <input type="number" value="1">
+          <h2>25 DT</h2>
+          <button class="danger-btn">Remove</button>
+
+        </div>
+        <div class="cart-item">
+          <img src="/image/beauty1.webp" alt="gjh">
+          <h1>25 DT</h1>
+          <input type="number" value="1">
+          <h2>25 DT</h2>
+          <button class="danger-btn">Remove</button>
+        </div>
+        <div class="cart-item">
+          <img src="/image/beauty1.webp" alt="gjh">
+          <h1>25 DT</h1>
+          <input type="number" value="1">
+          <h2>25 DT</h2>
+          <button class="danger-btn">Remove</button>
+        </div>
+        <div class="cart-item">
+          <img src="/image/beauty1.webp" alt="gjh">
+          <h1>25 DT</h1>
+          <input type="number" value="1">
+          <h2>25 DT</h2>
+          <button class="danger-btn">Remove</button>
+        </div>
+      </div>
+    
+    
+    </div>
+  </nav>
+
+  <div class="affiche">
+    <img src="image/affiche.gif" id="affiche">
+  </div>
+
+
+
+  <div class="partie2">
+    <div class="menu">
+      <div class="opt">
+        <img src="image/offre.png" width="60px" height="60px" />
+        <h3> <a href="#sold">Offer</a></h3>
+      </div>
+      <div class="opt">
+        <img src="image/panier.png" width="50px" height="50px" />
+        <h3> <a href="#sup">Superette</a></h3>
+      </div>
+      <div class="opt">
+        <img src="image/mode.svg" width="50px" height="50px" />
+        <h3><a href="#mod">Mode</a></h3>
+      </div>
+      <div class="opt">
+        <img src="image/sport.png" width="40px" height="40px" />
+        <h3><a href="#spor">Sport</a></h3>
+      </div>
+      <div class="opt">
+        <img src="image/beauty-.png" width="40px" height="40px" />
+        <h3><a href="#beau">Beauty</a></h3>
+      </div>
+      <div class="opt">
+        <img src="image/garden-.png" width="50px" height="50px" />
+        <h3><a href="#gar">Garden</a></h3>
+      </div>
+      <div class="opt">
+        <img src="image/all.png" width="40px" height="40px" />
+        <h3><a href="#all">All categories</a></h3>
+      </div>
+
+    </div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container" id="all">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="image/image1.webp" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="image/image2.webp" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="image/image3.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="image/image4.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="image/image5.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </div>
+    <br>
+  </div>
+
+
+  <div class="sold" id="sold">
+
+    <video src="image/solde.mp4"></video>
+  </div>
+
+  <div class="nom" id="sup">
+    <h1> Superette</h1>
+    <div class="trait"></div>
+  </div>
+
+  <section class="produits">
+    <div class="card">
+      <img src="image/sup1.jpg" alt="mes" />
+      <div class="buy">
+        <h3>38.999DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/sup2.jpg" alt="mes" />
+      <div class="buy">
+        <h3>28.786DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="image/sup3.jpg" alt="mes" />
+      <div class="buy">
+        <h3>67.899DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <img src="image/sup4.jpg" alt="mes" />
+      <div class="buy">
+        <h3>55.456DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/sup5.jpg" alt="mes" />
+      <div class="buy">
+        <h3>58.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="image/sup6.jpg" alt="mes" />
+      <div class="buy">
+        <h3>78.789DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/sup7.jpg" alt="mes" />
+      <div class="buy">
+        <h3>56.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/sup8.jpg" alt="mes" />
+      <div class="buy">
+        <h3>45.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="nom" id="mod">
+    <h1> Mode</h1>
+    <div class="trait"></div>
+  </div>
+  <section class="produits">
+    <div class="card">
+      <img src="image/mode1.webp" alt="mes" />
+      <div class="buy">
+        <h3>250.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/mode2.webp" alt="mes" />
+      <div class="buy">
+        <h3>169.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="image/mode3.webp" alt="mes" />
+      <div class="buy">
+        <h3>289.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <img src="image/mode4.webp" alt="mes" />
+      <div class="buy">
+        <h3>129.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/mode5.webp" alt="mes" />
+      <div class="buy">
+        <h3>46.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/mode6.webp" alt="mes" />
+      <div class="buy">
+        <h3>250.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/mode7.webp" alt="mes" />
+      <div class="buy">
+        <h3>256.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/mode8.webp" alt="mes" />
+      <div class="buy">
+        <h3>320.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="nom" id="beau">
+    <h1> Beauty</h1>
+    <div class="trait"></div>
+  </div>
+  <section class="produits">
+    <div class="card">
+      <img src="image/beauty1.webp" alt="mes" />
+      <div class="buy">
+        <h3>236.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/beauty2.webp" alt="mes" />
+      <div class="buy">
+        <h3>49.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="image/beauty3.webp" alt="mes" />
+      <div class="buy">
+        <h3>456.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <img src="image/beauty4.webp" alt="mes" />
+      <div class="buy">
+        <h3>249.987DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/beauty5.webp" alt="mes" />
+      <div class="buy">
+        <h3>599.000DT</h3>
+        <button onclick="ooopen()" class="myBtn" n>Buy Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/beauty6.webp" alt="mes" />
+      <div class="buy">
+        <h3>549.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/beauty7.webp" alt="mes" />
+      <div class="buy">
+        <h3>99.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/beauty8.webp" alt="mes" />
+      <div class="buy">
+        <h3>188.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="nom" id="spor">
+    <h1> Sport</h1>
+    <div class="trait"></div>
+  </div>
+  <section class="produits">
+    <div class="card">
+      <img src="image/sport1.webp" alt="mes" />
+      <div class="buy">
+        <h3>300.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/sport2.webp" alt="mes" />
+      <div class="buy">
+        <h3>345.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="image/sport3.webp" alt="mes" />
+      <div class="buy">
+        <h3>278.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <img src="image/sport4.webp" alt="mes" />
+      <div class="buy">
+        <h3>567.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/sport5.webp" alt="mes" />
+      <div class="buy">
+        <h3>78.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">Buy Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/sport6.webp" alt="mes" />
+      <div class="buy">
+        <h3>456.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/sport7.webp" alt="mes" />
+      <div class="buy">
+        <h3>345.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/sport8.webp" alt="mes" />
+      <div class="buy">
+        <h3>234.000DT</h3>
+        <button onclick="ooopen()" class="myBtn">buy Now</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- The Modal -->
+  <div class="modal">
+    <button onclick="X()" id="x">X</button>
+    <h1>validate your order </h1>
+
+
+    <button id="con"> Confirm</button>
+  </div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+  <footer>
+    <div class="foo">
+      <input type="text" placeholder="Votre email">
+      <button>Subscribe</button>
+    </div>
+
+    <div class="info">
+
+      <div class="col">
+        <h3>Services à la clientèle</h3>
+        <p>
+          Centre d aide
+          Signaler un abus
+          Soumettre un différend
+          Politiques et règles
+          Recevez une compensation pour vos commentaires</p>
+      </div>
+
+
+      <div class="col">
+        <h3>Qui sommes-nous</h3>
+        <p>
+          À propos de Alibaba.com
+          À propos du groupe Alibaba
+          Plan du site
+          Blog Alibaba.com
+          Legal Notice</p>
+      </div>
+
+      <div class="col">
+        <h3>Approvisionnez-vous sur Safa.com</h3>
+        <p>
+          Ressources
+          Toutes les catégories
+          Demande de devis
+          Prêt à être expédié
+          Partenaires acheteurs
+          Alibaba.com Select</p>
+      </div>
+
+      <div class="col">
+        <h3>Vendre sur Safa.com</h3>
+        <p>
+          Adhésion comme fournisseur
+          Centre d'apprentissage
+          Partner Program</p>
+      </div>
+
+
+      <div class="col">
+        <h3>Services du commerce</h3>
+        <p>
+          Assurance commerce
+          Identité de l'entreprise
+          Service logistique
+          Suivi de la production & services d'inspection
+          Letter of Credit</p>
+      </div>
+    </div>
+    <div class="log">
+      <img src="image/facebook.png" width="70px" height="70px">
+      <img src="image/twitter.png" width="70px" height="70px">
+      <img src="image/youtube.png" width="70px" height="70px">
+      <img src="image/instagramme.png" width="70px" height="70px">
+    </div>
+    <center>
+      <h4>© 1999-2022 Safa.com. All rights reserved.</h4>
+    </center>
+  </footer>
+  <script src="/js/java.js"></script>
+</body>
+
+</html>
